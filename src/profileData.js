@@ -61,7 +61,7 @@ const profileData = {
     { name: 'Marathi', code: 'mr', proficiency: 'Native', native: true, flag: '🇮🇳', percent: 99 }
   ],
   downloads: [
-    { name: 'Resume', file: '/resume112.pdf', label: 'Resume', description: 'Download my latest resume for ServiceNow roles.', icon: '📄', type: 'PDF', ariaLabel: 'Download Resume as PDF' },
+    { name: 'Resume', file: 'https://docs.google.com/document/d/1G2KWbs6QZSTK6UIQC4vaCf6eE-lAhvEA/export?format=pdf', label: 'Resume', description: 'Download my latest resume for ServiceNow roles.', icon: '📄', type: 'PDF', ariaLabel: 'Download Resume as PDF' },
     { name: 'Cover Letter', file: 'https://docs.google.com/document/d/1c9LikCHDSx7iJbfC2gf07XSJMv54VXmq/edit?usp=drive_link&ouid=109198433832835124652&rtpof=true&sd=true', label: 'Cover Letter', description: 'Download my tailored cover letter for your reference.', icon: '✉️', type: 'PDF', ariaLabel: 'Download Cover Letter as PDF' }
   ],
   funFacts: [
