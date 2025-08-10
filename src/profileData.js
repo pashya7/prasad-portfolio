@@ -29,8 +29,8 @@ const profileData = {
   profile: {
     name: "Prasad Shelar",
     title: "ServiceNow Senior Developer",
-    about: "6+ 2 years of experience in ServiceNow, ITSM, and cloud transformation. Passionate about building scalable, user-centric enterprise apps and mentoring future tech leaders.",
-    tagline: "1Transforming challenges into seamless digital solutions.",
+    about: "ServiceNow Senior Developer with 6 years of hands-on experience in ITSM, CSM, Service Portal, and enterprise automation. Certified in CIS-ITSM, CIS-Discovery, Application Developer, and ITIL v4. Expert in platform configuration, integrations (REST/SOAP, Integration Hub), JavaScript scripting, and process automation. Passionate about building scalable, user-centric solutions and mentoring teams to deliver measurable business value.",
+    tagline: "Empowering enterprises with ServiceNow innovation and digital excellence.",
     photo: "/profile_photo.jpg",
     location: "Pune, India",
     contact: {
