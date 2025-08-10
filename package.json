@@ -2,7 +2,7 @@
   "name": "prasad-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://pashya7.github.io/Portfolio",
+  "homepage": "https://pashya7.github.io/prasad-portfolio",
   "description": "Story-driven portfolio for Prasad Shelar (ServiceNow Senior Developer)",
   "scripts": {
     "predeploy": "npm run build",
