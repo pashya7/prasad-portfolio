@@ -20,7 +20,60 @@ export default function ProfessionalJourneySection({ journey }) {
     default: 'from-blue-100 to-blue-50 border-blue-400'
   };
   return (
-    <section className="py-12 px-4 max-w-4xl mx-auto">
+    <section className="py-12 px-4 max-w-4xl mx-auto relative overflow-hidden">
+      {/* Infinity loop SVG background inspired by ServiceNow */}
+      <svg
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-50 animate-spin-slow"
+        width="1200" height="700" viewBox="0 0 1200 700" fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        style={{ pointerEvents: 'none' }}
+      >
+        <defs>
+          <linearGradient id="loopGradient" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#38bdf8" />
+            <stop offset="0.5" stopColor="#34d399" />
+            <stop offset="1" stopColor="#818cf8" />
+          </linearGradient>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="16" result="coloredBlur" />
+            <feMerge>
+              <feMergeNode in="coloredBlur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <path
+          d="M 300 350 C 300 150, 900 150, 900 350 C 900 550, 300 550, 300 350 Z"
+          stroke="url(#loopGradient)"
+          strokeWidth="32"
+          fill="none"
+          filter="url(#glow)"
+        />
+        <path
+          d="M 900 350 C 900 150, 300 150, 300 350 C 300 550, 900 550, 900 350 Z"
+          stroke="url(#loopGradient)"
+          strokeWidth="32"
+          fill="none"
+          filter="url(#glow)"
+        />
+        {/* Animated stars/particles */}
+        <g>
+          <circle cx="350" cy="180" r="3" fill="#fff" opacity="0.7">
+            <animate attributeName="cy" values="180;170;180" dur="4s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="1050" cy="520" r="2.5" fill="#fff" opacity="0.7">
+            <animate attributeName="cy" values="520;540;520" dur="5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="600" cy="100" r="2" fill="#fff" opacity="0.5">
+            <animate attributeName="cx" values="600;620;600" dur="6s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="800" cy="250" r="1.8" fill="#fff" opacity="0.5">
+            <animate attributeName="cy" values="250;230;250" dur="3.5s" repeatCount="indefinite" />
+          </circle>
+        </g>
+      </svg>
+
       <div className="h-8 flex items-center justify-center w-full mb-2">
         <span className="inline-block w-24 border-t-2 border-sn opacity-30 mx-2"></span>
         <h2 className="text-3xl font-extrabold text-sn tracking-tight text-center">Professional Journey</h2>
@@ -92,7 +145,26 @@ export default function ProfessionalJourneySection({ journey }) {
                         aria-live="polite"
                         tabIndex={0}
                       >
-                        <div className="sn-timeline-detail-desc">{item.details}</div>
+                        {
+  Array.isArray(item.details)
+    ? (
+        <ul className="sn-timeline-detail-desc list-disc pl-6">
+          {item.details.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
+      )
+    : (typeof item.details === 'string' && item.details.includes('.') && item.details.split('.').filter(s => s.trim()).length > 1
+        ? (
+            <ul className="sn-timeline-detail-desc list-disc pl-6">
+              {item.details.split('.').filter(s => s.trim()).map((point, i) => (
+                <li key={i}>{point.trim()}</li>
+              ))}
+            </ul>
+          )
+        : <div className="sn-timeline-detail-desc">{item.details}</div>
+      )
+}
                       </motion.div>
                     </div>
                   </AnimatePresence>
