@@ -31,7 +31,7 @@ const profileData = {
     title: "ServiceNow Senior Developer",
     about: "6+ 2 years of experience in ServiceNow, ITSM, and cloud transformation. Passionate about building scalable, user-centric enterprise apps and mentoring future tech leaders.",
     tagline: "1Transforming challenges into seamless digital solutions.",
-    photo: "https://drive.google.com/uc?export=view&id=1aFsFmzUM_5qL8hVOlApd7FIqIx_FKZML",
+    photo: "/profile_photo.jpg",
     location: "Pune, India",
     contact: {
       email: {

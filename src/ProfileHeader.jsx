@@ -6,7 +6,8 @@ export default function ProfileHeader({ profile }) {
       <img
         src={profile.photo}
         alt={profile.name}
-        className="rounded-full w-32 h-32 mb-4 md:mb-0 shadow-lg border-4 border-blue-400"
+        className="rounded-full w-32 h-32 mb-4 md:mb-0 shadow-lg border-4 border-blue-400 object-cover aspect-square"
+        style={{objectFit:'cover'}}
       />
       <div className="flex-1 text-center md:text-left">
         <h2 className="text-2xl md:text-3xl font-extrabold mb-2 text-sn" tabIndex={0} style={{ letterSpacing: ".01em" }}>
