@@ -113,20 +113,54 @@ const profileData = {
     { name: "Custom Reporting Dashboard", img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80", tech: ["ServiceNow", "Reporting", "React"], desc: "Built custom dashboards for real-time analytics.", details: "Interactive charts, export features. Role: Frontend Developer.", video: "" }
   ],
   professionalJourney: [
-    { type: 'education', date: '2015 - 2019', title: 'BCS Computer Science – Pune University', org: 'Pune University', details: 'The expanded description box will now only show the title and description (details), with the date removed for a cleaner look. You can check the timeline: when you expand an item, the new box displays just the title and description as requested. If you need further adjustments—such as changing the order, font, or adding/removing other fields—just let me know!.Started as a ServiceNow Developer. Built custom HR and ITSM workflows. First Class with Distinction', icon: '📜' },
-    { type: 'certification', date: '2020', title: 'Certified System Administrator (ServiceNow)', org: 'ServiceNow', details: 'Credential ID: SN-123456', icon: '📜' },
-    { type: 'experience', date: '2019 - 2022', title: 'ServiceNow Developer – CloudBridge', org: 'CloudBridge', details: 'Developed custom ServiceNow apps for HR and ITSM workflows. Integrated third-party APIs and enhanced user experience with UI policies.', icon: '💼' },
-    { type: 'experience', date: '2022 - Present', title: 'Lead ServiceNow Developer – TechNova Solutions', org: 'TechNova Solutions', details: 'Led a team of 5, delivering 10+ ServiceNow modules for Fortune 500 clients. Architected ITSM automation for Fortune 500 clients.', icon: '💼' },
-    { type: 'certification', date: '2022', title: 'Certified Scrum Master', org: 'Scrum Alliance', details: 'Credential ID: CSM-654321', icon: '📜' },
-    { type: 'award', date: '2024', title: 'Awarded "Innovator of the Year"', org: 'TechNova', details: 'Recognized for automating 80% of manual workflows.', icon: '🏆' }
+   // Experience
+    { type: 'experience', date: 'Dec 2025 - Current', title: 'ServiceNow Senior Consultant', org: 'ThirdEra (Remote)', details: [
+      'Platform set, ITSM, ITOM implementation.'
+    ], icon: '💼' },
+    { type: 'experience', date: 'Apr 2022 - Dec 2025', title: 'ServiceNow Senior Consultant', org: 'Deloitte India (Pune, Maharashtra)', details: [
+      'Led projects on Integration, ITSM, CSM, and Service Portal development.',
+      'Developed Plaid and ACHWorks integrations, Google Cloud Translator, and REST/SOAP ServiceNow integrations.',
+      'Customized CSM Portal, implemented ITOM/ITAM, SPM, and multilingual portals.',
+      'Delivered Advanced Digital Health (ADH) project.',
+      'Proficient in scripting, branding, documentation, and training.',
+      'Recognized for high-quality results and team collaboration.'
+    ], icon: '💼' },
+    { type: 'experience', date: 'Oct 2019 – Apr 2022', title: 'ServiceNow Associate Consultant', org: 'T-systems India Pvt Ltd (Pune, Maharashtra)', details: [
+      'Expert in ITSM, ITBM, and integration.',
+      'Designed service catalogs, performed scripting, managed notifications, data loads, and integrations.',
+      'Gathered requirements, managed code migration, and delivered solutions in agile teams.',
+      'Six months BMC Remedy experience.'
+    ], icon: '💼' },
+   // Education
+   { type: 'education', date: '2019 - 2021', title: 'Master of Computer Science', org: 'Dr. D. Y. Patil, Computer Science College, Pune, MH', details: [
+     'Graduated with 86%',
+     'Focused on advanced computer science concepts, research, and real-world applications through academic projects.'
+   ], icon: '🎓' },
+   { type: 'education', date: '2016 - 2019', title: 'Bachelor of Computer Science', org: 'Dr. D. Y. Patil, ACS College, Pune, MH', details: [
+     'Graduated with 75.05%',
+     'Built a strong foundation in programming, algorithms, and software development.'
+   ], icon: '🎓' },
+   { type: 'education', date: '2015 - 2016', title: '12th', org: 'MJS College, Shrigonda, MH', details: [
+     'Passed with 64%',
+     'Chose science stream and participated in academic and extracurricular activities.'
+   ], icon: '🎓' },
+   { type: 'education', date: '2013 - 2014', title: '10th', org: 'JVK School, Kashti, MH', details: [
+     'Passed with 80.80%',
+     'Built a solid academic foundation and developed interest in science and technology.'
+   ], icon: '🎓' }
   ],
   careerJourneyMap: [
-    { date: '2019', title: 'Joined 2 CloudBridge', icon: '💼', description: ' The expanded description box will now only show the title and description (details), with the date removed for a cleaner look. You can check the timeline: when you expand an item, the new box displays just the title and description as requested. If you need further adjustments—such as changing the order, font, or adding/removing other fields—just let me know!.Started as a ServiceNow Developer. Built custom HR and ITSM workflows.' },
-    { date: '2020', title: 'ServiceNow Certified', icon: '📜', description: 'Achieved ServiceNow System Administrator certification.' },
-    { date: '2021', title: 'Incident Automation Platform', icon: '  🛠️', description: 'Launched automation platform, reducing incident resolution time by 40%.' },
-    { date: '2022', title: 'Lead Developer at TechNova', icon: '💼', description: 'Promoted to Lead. Architected ITSM automation for Fortune 500 clients.' },
-    { date: '2023', title: 'ITIL 2 Certified', icon: '📜', description: 'Completed ITIL Foundation Certification.' },
-    { date: '2024', title: 'Awarded "Innovator of the Year"', icon: '🏆', description: 'Recognized for automating 80% of manual workflows.' }
+    { date: '2018', title: '1st Prize - Programming Competition', icon: '🏆', description: 'Won 1st prize in a programming competition organized by Dr. D. Y. Patil College.' },
+    { date: '2019', title: 'Joined T-systems India', icon: '💼', description: 'Career change: Joined T-systems India as an Associate Consultant, specializing in ServiceNow ITSM, ITBM, and integrations.' },
+    { date: '2020', title: '3rd Prize - Hackathon Automation', icon: '🏆', description: "Won 3rd prize in the 'Hackathon Automation' competition organized by Automation team T-systems." },
+    { date: '2020', title: 'ServiceNow CSA Certified', icon: '📜', description: 'Achieved ServiceNow System Administrator certification.' },
+    { date: 'Apr 2022', title: 'Joined Deloitte India', icon: '💼', description: 'Career change: Joined Deloitte India as a ServiceNow Consultant.' },
+    { date: '2022', title: 'Promoted to Senior Consultant', icon: '💼', description: 'Promoted to Senior Consultant at Deloitte India.' },
+    { date: '2023', title: 'ServiceNow Now Community Rising Star Award', icon: '🏆', description: 'Earned for exceptional contributions and leadership in the ServiceNow community.' },
+    { date: '2023', title: 'ITIL 4 Certified', icon: '📜', description: 'Completed ITIL Foundation v4 Certification.' },
+    { date: '2024', title: 'ServiceNow Now Community Rising Star Award', icon: '🏆', description: 'Earned for exceptional contributions and leadership in the ServiceNow community.' },
+    { date: '2024', title: 'Awarded "Innovator of the Year"', icon: '🏆', description: 'Recognized for automating 80% of manual workflows.' },
+    { date: 'Dec 2025', title: 'Joined ThirdEra', icon: '💼', description: 'Career change: Joined ThirdEra as a ServiceNow Senior Consultant, focusing on platform setup, ITSM, and ITOM implementation.' }
   ]
 };
 
