@@ -5,7 +5,7 @@ const PhoneIcon = FaPhone;
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { motion } from 'framer-motion';
-import resumePDF from '../public/resume.pdf';
+
 import PortfolioGallery from './PortfolioGallery';
 import PortfolioDetail from './PortfolioDetail';
 import CareerJourneyMap from './CareerJourneyMap';
