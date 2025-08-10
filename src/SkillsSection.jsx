@@ -18,8 +18,8 @@ export default function SkillsSection({ skills }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: idx * 0.08, type: 'spring', bounce: 0.18 }}
-            whileHover={{ scale: 1.045, boxShadow: '0 8px 32px 0 #10736044, 0 2px 12px rgba(16,115,96,0.13)' }}
-            style={{ willChange: 'transform, box-shadow, opacity' }}
+            whileHover={{ scale: 1.045 }}
+            style={{ willChange: 'transform, opacity' }}
           >
             <span className="font-semibold text-sn mb-1 text-lg">{skill.name}</span>
             <div className="w-full bg-sn-light bg-opacity-20 rounded-full h-2 mt-2 mb-1">

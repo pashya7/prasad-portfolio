@@ -80,7 +80,7 @@ export default function ProfessionalJourneySection({ journey }) {
         <span className="inline-block w-24 border-t-2 border-sn opacity-30 mx-2"></span>
       </div>
       <p className="text-center text-gray-500 mb-8 max-w-xl mx-auto text-lg">
-        A quick look at my academic, certification, and professional milestones.
+        A quick look at my academic, and professional milestones.
       </p>
       <VerticalTimeline lineColor="#107360">
         {journey.map((item, idx) => {

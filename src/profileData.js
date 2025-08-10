@@ -61,8 +61,8 @@ const profileData = {
     { name: 'Marathi', code: 'mr', proficiency: 'Native', native: true, flag: '🇮🇳', percent: 99 }
   ],
   downloads: [
-    { name: 'Resume', file: 'https://docs.google.com/document/d/1G2KWbs6QZSTK6UIQC4vaCf6eE-lAhvEA/export?format=pdf', label: 'Resume', description: 'Download my latest resume for ServiceNow roles.', icon: '📄', type: 'PDF', ariaLabel: 'Download Resume as PDF' },
-    { name: 'Cover Letter', file: 'https://docs.google.com/document/d/1c9LikCHDSx7iJbfC2gf07XSJMv54VXmq/edit?usp=drive_link&ouid=109198433832835124652&rtpof=true&sd=true', label: 'Cover Letter', description: 'Download my tailored cover letter for your reference.', icon: '✉️', type: 'PDF', ariaLabel: 'Download Cover Letter as PDF' }
+    { name: 'Resume', file: '/ServiceNow_Senior_Dev_Prasad_Shelar(6+yrs).pdf', label: 'Resume', description: 'Download my latest resume for ServiceNow roles.', icon: '📄', type: 'PDF', ariaLabel: 'Download Resume as PDF' },
+    { name: 'Cover Letter', file: '/Cover_Letter.pdf', label: 'Cover Letter', description: 'Download my tailored cover letter for your reference.', icon: '✉️', type: 'PDF', ariaLabel: 'Download Cover Letter as PDF' }
   ],
   funFacts: [
     'Avid1 trekker & nature photographer',
@@ -141,26 +141,29 @@ const profileData = {
      'Built a strong foundation in programming, algorithms, and software development.'
    ], icon: '🎓' },
    { type: 'education', date: '2015 - 2016', title: '12th', org: 'MJS College, Shrigonda, MH', details: [
-     'Passed with 64%',
-     'Chose science stream and participated in academic and extracurricular activities.'
-   ], icon: '🎓' },
+     'Passed with 64%'
+      ], icon: '🎓' },
    { type: 'education', date: '2013 - 2014', title: '10th', org: 'JVK School, Kashti, MH', details: [
-     'Passed with 80.80%',
-     'Built a solid academic foundation and developed interest in science and technology.'
-   ], icon: '🎓' }
+     'Passed with 80.80%'
+     ], icon: '🎓' }
   ],
   careerJourneyMap: [
     { date: '2018', title: '1st Prize - Programming Competition', icon: '🏆', description: 'Won 1st prize in a programming competition organized by Dr. D. Y. Patil College.' },
+    { date: '2019', title: 'Complete BCS', icon: '🎓', description: 'Completed Bachalor of Computer Science with first class with distinction.' },
     { date: '2019', title: 'Joined T-systems India', icon: '💼', description: 'Career change: Joined T-systems India as an Associate Consultant, specializing in ServiceNow ITSM, ITBM, and integrations.' },
     { date: '2020', title: '3rd Prize - Hackathon Automation', icon: '🏆', description: "Won 3rd prize in the 'Hackathon Automation' competition organized by Automation team T-systems." },
-    { date: '2020', title: 'ServiceNow CSA Certified', icon: '📜', description: 'Achieved ServiceNow System Administrator certification.' },
+    { date: '2020', title: 'ITIL 4 Certified', icon: '📜', description: 'Completed ITIL Foundation v4 Certification.' },
+    { date: '2021', title: 'ServiceNow CSA Certified', icon: '📜', description: 'Achieved ServiceNow System Administrator certification.' },
+    { date: '2021', title: 'Complete MCS', icon: '🎓', description: 'Completed Master of Computer Science with first class with distinction.' },
+    { date: '2021', title: 'Promoted to Consultant', icon: '💼', description: 'Promoted to Consultant at T-systems India.' },
     { date: 'Apr 2022', title: 'Joined Deloitte India', icon: '💼', description: 'Career change: Joined Deloitte India as a ServiceNow Consultant.' },
     { date: '2022', title: 'Promoted to Senior Consultant', icon: '💼', description: 'Promoted to Senior Consultant at Deloitte India.' },
+    { date: 'Dec 2023', title: 'ServiceNow CIS-ITSM Certified', icon: '📜', description: 'Achieved ServiceNow CIS-ITSM certification.' },
     { date: '2023', title: 'ServiceNow Now Community Rising Star Award', icon: '🏆', description: 'Earned for exceptional contributions and leadership in the ServiceNow community.' },
-    { date: '2023', title: 'ITIL 4 Certified', icon: '📜', description: 'Completed ITIL Foundation v4 Certification.' },
+    { date: '2023', title: 'ServiceNow Certified Application Developer', icon: '📜', description: 'Achieved ServiceNow Certified Application Developer certification.' },
     { date: '2024', title: 'ServiceNow Now Community Rising Star Award', icon: '🏆', description: 'Earned for exceptional contributions and leadership in the ServiceNow community.' },
-    { date: '2024', title: 'Awarded "Innovator of the Year"', icon: '🏆', description: 'Recognized for automating 80% of manual workflows.' },
-    { date: 'Dec 2025', title: 'Joined ThirdEra', icon: '💼', description: 'Career change: Joined ThirdEra as a ServiceNow Senior Consultant, focusing on platform setup, ITSM, and ITOM implementation.' }
+    { date: 'Dec 2025', title: 'Joined ThirdEra', icon: '💼', description: 'Career change: Joined ThirdEra as a ServiceNow Senior Consultant, focusing on platform setup, ITSM, and ITOM implementation.' },
+    { date: 'Dec 2025', title: 'ServiceNow CIS-Discovery Certified', icon: '📜', description: 'Achieved ServiceNow CIS-Discovery certification.' }
   ]
 };
 

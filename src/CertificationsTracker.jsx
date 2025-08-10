@@ -19,7 +19,7 @@ export default function CertificationsTracker({ certifications }) {
   const [modalCert, setModalCert] = React.useState(null);
 
   return (
-    <motion.section className="py-12 px-2 max-w-4xl mx-auto" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+    <motion.section className="relative py-16 px-2 w-full min-h-[420px] flex flex-col items-center justify-center overflow-visible bg-gradient-to-br from-blue-50 via-green-50 to-white dark:from-gray-900 dark:via-blue-900 dark:to-gray-800" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
       <div className="h-8 flex items-center justify-center w-full mb-2">
         <span className="inline-block w-24 border-t-2 border-sn opacity-30 mx-2"></span>
         <h2 className="text-3xl font-extrabold text-sn tracking-tight text-center">Certifications Tracker</h2>
@@ -28,9 +28,9 @@ export default function CertificationsTracker({ certifications }) {
       <p className="text-center text-gray-500 mb-8 max-w-xl mx-auto">Completed and upcoming certifications with verification links.</p>
       <div className="flex flex-col items-center">
         <div className="flex items-center gap-4 mb-2">
-          <button onClick={() => setCurrent((c) => (c === 0 ? certifications.length - 1 : c - 1))} aria-label="Previous certification" className="p-2 bg-sn-light text-white rounded-full shadow hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-sn-light" tabIndex={0}>&#8592;</button>
+          <button onClick={() => setCurrent((c) => (c === 0 ? certifications.length - 1 : c - 1))} aria-label="Previous certification" className="p-3 md:p-4 bg-sn-light text-white rounded-full shadow-lg hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-sn-light text-xl md:text-2xl" tabIndex={0}>&#8592;</button>
           <div
-            className="card-sn p-6 flex flex-col items-center shadow transition-all duration-300 rounded-xl border border-sn bg-white/80 min-w-[220px] min-h-[140px] w-72 md:w-96"
+            className="glass-card p-8 flex flex-col items-center shadow-xl transition-all duration-300 rounded-2xl border border-sn bg-white/60 dark:bg-gray-900/50 backdrop-blur-md min-w-[260px] min-h-[180px] w-full max-w-md mx-auto relative overflow-hidden"
             tabIndex={0}
             aria-live="polite"
             onTouchStart={e => touchStartX.current = e.touches[0].clientX}
@@ -42,7 +42,10 @@ export default function CertificationsTracker({ certifications }) {
               touchStartX.current = null;
             }}
           >
-            <h3 className="font-bold text-lg mb-1 text-center text-sn">{certifications[current].name}</h3>
+            <div className="flex items-center gap-2 mb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 19l-7 2 1.5-8.5L3 9l8.5-1.5L12 3l1.5 4.5L22 9l-3.5 3.5L19 21z"/></svg>
+              <h3 className="font-bold text-lg text-center text-sn">{certifications[current].name}</h3>
+            </div>
             <span className="text-xs text-gray-500 mb-4">{certifications[current].year}</span>
             {certifications[current].img ? (
               <button
@@ -58,10 +61,12 @@ export default function CertificationsTracker({ certifications }) {
               <button className="button-sn px-6 py-2 text-xs font-semibold rounded bg-gray-300 text-gray-500 cursor-not-allowed mt-auto" disabled>View</button>
             )}
           </div>
-          <button onClick={() => setCurrent((c) => (c === certifications.length - 1 ? 0 : c + 1))} aria-label="Next certification" className="p-2 bg-sn-light text-white rounded-full shadow hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-sn-light" tabIndex={0}>&#8594;</button>
+          <button onClick={() => setCurrent((c) => (c === certifications.length - 1 ? 0 : c + 1))} aria-label="Next certification" className="p-3 md:p-4 bg-sn-light text-white rounded-full shadow-lg hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-sn-light text-xl md:text-2xl" tabIndex={0}>&#8594;</button>
         </div>
-        <div className="mt-4 text-center text-sn font-semibold text-base select-none">
-          {certifications.length > 0 ? `${current + 1} / ${certifications.length}` : ''}
+        <div className="flex justify-center gap-2 mt-4 mb-2">
+          {certifications.map((_, i) => (
+            <span key={i} className={`w-2 h-2 rounded-full ${i === current ? 'bg-sn' : 'bg-gray-300'} transition-all`}></span>
+          ))}
         </div>
       </div>
       {modalCert && (
