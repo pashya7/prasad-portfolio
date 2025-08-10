@@ -69,19 +69,21 @@ const profileData = {
     'Loves 2 solving Rubik’s cubes',
     'Writes tech blogs & mentors juniors',
     'Enjoys cricket and chess',
-    'Coffee enthusiast ☕',
+    'Coffee enthusiast ',
     'Passionate about open-source',
     'Plays guitar and sings',
     'Volunteers for STEM education'
   ],
   certifications: [
-    { name: "ServiceNow Certified System Administrator", year: 2020, url: "https://www.credly.com/badges/servicenow-admin", img: "https://randomuser.me/api/portraits/men/76.jpg" },
-    { name: "ITIL Foundation", year: 2023, url: "https://www.credly.com/badges/itil-foundation", img: "https://images.credly.com/images/9e3c0b8a-5e6b-4e4d-8c5e-6e9c7a9b2e9c/ITIL_Badge.png" },
-    { name: "ServiceNow Certified Application Developer", year: 2025, url: "", img: "https://images.credly.com/images/placeholder-badge.png" },
-    { name: "Certified Scrum Master", year: 2022, url: "https://www.scrumalliance.org/certifications/practitioners/csm-certification", img: "https://scrumalliance.org/images/csm-badge.png" },
-    { name: "AWS Certified Solutions Architect", year: 2021, url: "https://aws.amazon.com/certification/certified-solutions-architect-associate/", img: "https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Solutions-Architect_Associate_512x512.1b8e5d1ecb3e2b9f7e1b.png" },
-    { name: "Microsoft Certified: Azure Fundamentals", year: 2021, url: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/", img: "https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-azure-fundamentals.svg" },
-    { name: "Google Cloud Certified - Associate Cloud Engineer", year: 2023, url: "https://cloud.google.com/certification/cloud-engineer", img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" }
+    { name: "ServiceNow CIS - Discovery", year: 2025, url: "https://cloud.google.com/certification/cloud-engineer", img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" },
+    { name: "ServiceNow Certified Application Developer", year: 2023 , url: "https://cloud.google.com/certification/cloud-engineer", img: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" },
+    { name: "ServiceNow CIS – ITSM", year: 2023 },
+    { name: "Micro Certification – Citizen Developer Application Creator", year: 2022 },
+    { name: "ServiceNow System Administrator (CSA)", year: 2021 },
+    { name: "Micro-Certification – Integration Hub", year: 2021 },
+    { name: "Micro-Certification - Flow Designer", year: 2021 },
+    { name: "Advanced JavaScript Certificate", year: 2021 },
+    { name: "ITIL Foundation v4 Certificate in ITSM", year: 2020 }
   ],
   articles: [
     { title: "H ow to Use Switch Case in JavaScript (ServiceNow Example)", url: "https://www.servicenow.com/community/developer-articles/how-to-use-switch-case-in-javascript-with-example-servicenow/ta-p/2312594", excerpt: "A practical guide to using switch-case statements in JavaScript, with ServiceNow-specific examples.", category: "Tutorial", tags: ["JavaScript", "ServiceNow", "Tutorial"] },
