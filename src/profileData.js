@@ -46,14 +46,51 @@ const profileData = {
     }
   },
   skills: [
-    { name: "ServiceNow1", level: 5 },
-    { name: "JavaScript 2", level: 92 },
-    { name: "ITIL", level: 90 },
-    { name: "React", level: 88 },
-    { name: "REST 2 API", level: 85 },
-    { name: "Team Leadership", level: 84 },
-    { name: "Agile/Scrum", level: 83 },
-    { name: "UI/UX", level: 8 }
+    {
+      group: "ServiceNow Platform",
+      skills: [
+        { name: "ITSM", level: 97 },
+        { name: "CSM", level: 90 },
+        { name: "Service Portal", level: 92 },
+        { name: "Flow Designer", level: 90 },
+        { name: "Integration Hub", level: 88 },
+        { name: "Service Catalog", level: 90 },
+        { name: "CMDB", level: 85 },
+        { name: "Asset Management", level: 80 },
+        { name: "Data Migration", level: 80 },
+      ]
+    },
+    {
+      group: "Scripting & APIs",
+      skills: [
+        { name: "JavaScript", level: 95 },
+        { name: "Client-side Scripting", level: 92 },
+        { name: "Server-side Scripting", level: 92 },
+      ]
+    },
+    {
+      group: "ITSM/ITIL Processes",
+      skills: [
+        { name: "Incident Management", level: 95 },
+        { name: "Change Management", level: 92 },
+        { name: "Problem Management", level: 90 },
+        { name: "Knowledge Base", level: 85 },
+        { name: "ITIL", level: 90 },
+      ]
+    },
+    {
+      group: "Tools & Methodologies",
+      skills: [
+        { name: "Tables", level: 85 },
+        { name: "REST/SOAP APIs", level: 92 },
+        { name: "Integration", level: 90 },
+        { name: "Postman", level: 80 },
+        { name: "Agile", level: 85 },
+        { name: "Scrum", level: 85 },
+        { name: "Automation", level: 88 },
+        { name: "Notifications", level: 80 }, 
+      ]
+    }
   ],
   languages: [
     { name: 'English', code: 'en', proficiency: 'Fluent', native: false, flag: '🇬🇧', percent: 95 },
