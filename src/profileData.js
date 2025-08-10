@@ -4,25 +4,25 @@ const profileData = {
     {
       category: 'About Prasad',
       qa: [
-        { q: 'What is your ServiceNow experience?', a: 'I have 6+ years of experience in ServiceNow development, ITSM, and workflow automation.' },
-        { q: 'What certifications do you have?', a: 'I am a ServiceNow Certified System Administrator and ITIL Foundation certified.' },
-        { q: 'What is your professional background?', a: 'I have a background in ServiceNow, ITSM, and cloud transformation.' },
+        { q: 'What is your ServiceNow experience?', a: 'I have 6 years of hands-on experience as a ServiceNow developer, leading ITSM, CSM, Service Portal, and automation projects for global clients.' },
+        { q: 'What certifications do you have?', a: 'I am certified in ServiceNow CIS-ITSM, CIS-Discovery, Application Developer, and ITIL v4.' },
+        { q: 'What is your professional background?', a: 'I specialize in ServiceNow platform configuration, custom app development, integrations (REST/SOAP, Integration Hub), and process automation. I enjoy mentoring, collaborating, and delivering value through digital transformation.' },
       ],
     },
     {
       category: 'Portfolio & Projects',
       qa: [
-        { q: 'Show me your top project.', a: 'Check out the Incident Automation Platform in my portfolio gallery for a showcase of automation and analytics.' },
-        { q: 'What is the Incident Automation Platform?', a: 'It is a platform built on ServiceNow that automated the incident lifecycle, integrated with Slack, and provided real-time analytics dashboards.' },
-        { q: 'Do you have any case studies?', a: 'Yes, see my portfolio section for case studies and project details.' },
+        { q: 'Show me your top project.', a: 'Sure! My Incident Automation Platform automates the entire incident lifecycle in ServiceNow, with Slack integration and real-time analytics. It reduced resolution time by 40%.' },
+        { q: 'What is the Incident Automation Platform?', a: 'It’s a custom solution on ServiceNow that automates incidents, routes tasks, integrates with Slack, and provides actionable analytics dashboards.' },
+        { q: 'Do you have any case studies?', a: 'Absolutely! Please visit my portfolio section for detailed case studies and project highlights.' },
       ],
     },
     {
       category: 'Contact & More',
       qa: [
-        { q: 'How can I contact you?', a: 'Use the contact form at the bottom of this page or connect with me on LinkedIn.' },
-        { q: 'Can I download your resume?', a: 'Yes, you can download my resume from the Quick Downloads section.' },
-        { q: 'Where can I find your LinkedIn?', a: 'You can find my LinkedIn profile in the contact section.' },
+        { q: 'How can I contact you?', a: 'You can reach me via the contact form below, email (prasad7official2@gmail.com), or connect with me on LinkedIn.' },
+        { q: 'Can I download your resume?', a: 'Yes! My latest resume and cover letter are available in the Quick Downloads section.' },
+        { q: 'Where can I find your LinkedIn?', a: 'You’ll find my LinkedIn link in the contact section. I’m happy to connect!' },
       ],
     },
   ],
@@ -42,7 +42,8 @@ const profileData = {
         value: "+91 9503669461",
         icon: "phone"
       },
-      github: "https://github.com/prasad-shelar"
+      github: "https://github.com/pashya7",
+      linkedin: "https://www.linkedin.com/in/prasad-shelar-713b18185/"
     }
   },
   skills: [
