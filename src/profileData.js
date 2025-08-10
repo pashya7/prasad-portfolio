@@ -27,19 +27,19 @@ const profileData = {
     },
   ],
   profile: {
-    name: "Prasad Shelar 2",
-    title: "ServiceNow Senior Developer 2",
+    name: "Prasad Shelar",
+    title: "ServiceNow Senior Developer",
     about: "6+ 2 years of experience in ServiceNow, ITSM, and cloud transformation. Passionate about building scalable, user-centric enterprise apps and mentoring future tech leaders.",
     tagline: "1Transforming challenges into seamless digital solutions.",
-    photo: "https://randomuser.me/api/portraits/men/76.jpg",
+    photo: "https://drive.google.com/file/d/1aFsFmzUM_5qL8hVOlApd7FIqIx_FKZML/view?usp=drive_link",
     location: "Pune, India",
     contact: {
       email: {
-        value: "prasad.shelar@email.com",
+        value: "prasad7official2@gmail.com",
         icon: "email"
       },
       phone: {
-        value: "+91 12345 67890",
+        value: "+91 9503669461",
         icon: "phone"
       },
       github: "https://github.com/prasad-shelar"
@@ -56,7 +56,7 @@ const profileData = {
     { name: "UI/UX", level: 8 }
   ],
   languages: [
-    { name: 'English1', code: 'en', proficiency: 'Fluent', native: false, flag: '🇬🇧', percent: 95 },
+    { name: 'English', code: 'en', proficiency: 'Fluent', native: false, flag: '🇬🇧', percent: 95 },
     { name: 'Hind', code: 'hi', proficiency: 'Fluent', native: false, flag: '🇮🇳', percent: 90 },
     { name: 'Marathi', code: 'mr', proficiency: 'Native', native: true, flag: '🇮🇳', percent: 99 }
   ],
