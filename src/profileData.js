@@ -31,7 +31,7 @@ const profileData = {
     title: "ServiceNow Senior Developer",
     about: "6+ 2 years of experience in ServiceNow, ITSM, and cloud transformation. Passionate about building scalable, user-centric enterprise apps and mentoring future tech leaders.",
     tagline: "1Transforming challenges into seamless digital solutions.",
-    photo: "https://drive.google.com/file/d/1aFsFmzUM_5qL8hVOlApd7FIqIx_FKZML/view?usp=drive_link",
+    photo: "https://drive.google.com/uc?export=view&id=1aFsFmzUM_5qL8hVOlApd7FIqIx_FKZML",
     location: "Pune, India",
     contact: {
       email: {
@@ -62,7 +62,7 @@ const profileData = {
   ],
   downloads: [
     { name: 'Resume', file: '/resume112.pdf', label: 'Resume', description: 'Download my latest resume for ServiceNow roles.', icon: '📄', type: 'PDF', ariaLabel: 'Download Resume as PDF' },
-    { name: 'Cover Letter', file: 'https://www.arvindguptatoys.com/arvindgupta/hundred-poems.pdf', label: 'Cover Letter', description: 'Download my tailored cover letter for your reference.', icon: '✉️', type: 'PDF', ariaLabel: 'Download Cover Letter as PDF' }
+    { name: 'Cover Letter', file: 'https://docs.google.com/document/d/1c9LikCHDSx7iJbfC2gf07XSJMv54VXmq/edit?usp=drive_link&ouid=109198433832835124652&rtpof=true&sd=true', label: 'Cover Letter', description: 'Download my tailored cover letter for your reference.', icon: '✉️', type: 'PDF', ariaLabel: 'Download Cover Letter as PDF' }
   ],
   funFacts: [
     'Avid1 trekker & nature photographer',
