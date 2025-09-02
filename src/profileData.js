@@ -29,8 +29,9 @@ const profileData = {
   profile: {
     name: "Prasad Shelar",
     title: "ServiceNow Senior Developer",
-    about: "ServiceNow Senior Developer with 6 years of hands-on experience in ITSM, CSM, Service Portal, and enterprise automation. Certified in CIS-ITSM, CIS-Discovery, Application Developer, and ITIL v4. Expert in platform configuration, integrations (REST/SOAP, Integration Hub), JavaScript scripting, and process automation. Passionate about building scalable, user-centric solutions and mentoring teams to deliver measurable business value.",
-    tagline: "Empowering enterprises with ServiceNow innovation and digital excellence.",
+    about: [
+      "Prasad Shelar is a certified Senior ServiceNow Developer with 6+ years of experience delivering enterprise-grade solutions across ITSM, ITOM, CSM, and Service Portal. He specializes in scripting, integrations, and automation, having led complex implementations for global clients. With strong skills in JavaScript, REST/SOAP APIs, and ServiceNow architecture, Prasad builds scalable, user-focused platforms that drive efficiency and transformation. Passionate about solving problems and enhancing user experience, he thrives in collaborative environments, enjoys mentoring, and continuously seeks innovative ways to improve."],
+    tagline: "Turning business challenges into smart ServiceNow solutions - with precision, passion, and purpose.",
     photo: "/profile_photo.jpg",
     location: "Pune, India",
     contact: {
@@ -103,14 +104,11 @@ const profileData = {
     { name: 'Cover Letter', file: '/Cover_Letter.pdf', label: 'Cover Letter', description: 'Download my tailored cover letter for your reference.', icon: '✉️', type: 'PDF', ariaLabel: 'Download Cover Letter as PDF' }
   ],
   funFacts: [
-    'Avid1 trekker & nature photographer',
-    'Loves 2 solving Rubik’s cubes',
-    'Writes tech blogs & mentors juniors',
-    'Enjoys cricket and chess',
-    'Coffee enthusiast ',
-    'Passionate about open-source',
-    'Plays guitar and sings',
-    'Volunteers for STEM education'
+    '🥾 I love trekking - nothing beats the thrill of a good trail!',
+    '🧊 Cold coffee is my go-to fuel.',
+    '👨‍🏫 Mentoring is something I genuinely enjoy - sharing knowledge and helping others grow.',
+    '🎬 Lately, I’ve been hooked on editing reels - it’s my new creative outlet!',
+    '🚚 I’m fond of monster truck toys - they’re just too cool to resist!'
   ],
   certifications: [
     { name: "ServiceNow CIS - Discovery", year: 2025, url: "", img: "/CIS-Discovery.jpeg" },
@@ -347,7 +345,7 @@ const profileData = {
   careerJourneyMap: [
     { date: '2018', title: '1st Prize - Programming Competition', icon: '🏆', description: 'Won 1st prize in a programming competition organized by Dr. D. Y. Patil College.' },
     { date: '2019', title: 'Complete BCS', icon: '🎓', description: 'Completed Bachalor of Computer Science with first class with distinction.' },
-    { date: '2019', title: 'Joined T-systems India', icon: '💼', description: 'Career change: Joined T-systems India as an Associate Consultant, specializing in ServiceNow ITSM, ITBM, and integrations.' },
+    { date: '2019', title: 'Joined T-systems India', icon: '💼', description: 'Career change: Joined T-systems India as an Associate Consultant, specializing in ServiceNow ITSM, Integrations.' },
     { date: '2020', title: '3rd Prize - Hackathon Automation', icon: '🏆', description: "Won 3rd prize in the 'Hackathon Automation' competition organized by Automation team T-systems." },
     { date: '2020', title: 'ITIL 4 Certified', icon: '📜', description: 'Completed ITIL Foundation v4 Certification.' },
     { date: '2021', title: 'ServiceNow CSA Certified', icon: '📜', description: 'Achieved ServiceNow System Administrator certification.' },

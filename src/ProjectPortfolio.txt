@@ -1,0 +1,35 @@
+
+1. ICT CMDB & Asset Management Implementation at AirTrunk
+Short Description: Designed a ServiceNow CMDB and asset management solution integrated with Microsoft Intune for streamlined ICT operations across APAC.
+Details: Delivered a centralized CMDB and asset lifecycle system for AirTrunk, integrating MS Intune for automated device onboarding. Supported multi-location operations with dashboards for compliance and configuration tracking. Included training, stakeholder engagement, and phased rollout for successful adoption.
+2. ITSM & ITAM Integration
+Short Description: Orchestrated a robust ITSM and ITAM integration for finance, streamlining compliance, asset management, and payment workflows.
+Details: Delivered end-to-end ITSM solutions for Australian Payment Plus, optimizing Incident, Change, Problem, and Knowledge Management. Integrated Plaid and ACHWorks for finance workflows, and customized ESP portal for asset reporting and contract management.
+3. Ministry of External Affairs Digital Platform
+Short Description: Developed a multilingual, public sector platform with chatbot, agent workspace, and PDF integration for ministry services.
+Details: Engineered a platform mirroring the Indian ministry website, with multilingual support via Google Cloud Translator, chatbot, agent workspace, and PDF handling for efficient citizen engagement.
+4. Future Workspace (FWS): Vaccination Tracker
+Short Description: Built a global vaccination management portal for Genpact, automating employee status tracking and reporting.
+Details: Developed a Service Portal for monitoring Genpact employee vaccination status globally, with automated reporting, email notifications, and delegated actions for compliance and communication.
+5. Delivery Health Dashboard (ADH)
+Short Description: Created a dynamic dashboard for global application delivery health monitoring, enhancing visibility and stakeholder reporting.
+Details: Designed a dashboard for Genpact to visualize project KPIs, automate reports, send real-time alerts, and manage data flexibly using ServiceNow modules.
+6. Project Portfolio Management Suite
+Short Description: Implemented ServiceNow PPM for large-scale portfolio, resource, and cost tracking tailored to Genpact’s innovation needs.
+Details: Led deployment of ServiceNow PPM for Genpact, enabling resource allocation, cost tracking, innovation management, and fiscal calendar integration for enterprise-level oversight.
+7. FCI: Future Cloud Infrastructure
+Short Description: Empowered enterprises to streamline access to cloud services with an automated, integrated Service Catalog.
+Details: Delivered a service catalog for cloud provisioning, integrating ServiceNow with VMware via REST APIs. Automated workflows and engaged stakeholders to ensure high-quality delivery.
+8. LegacyIT
+Short Description: Optimized network and security provisioning with a customized, client-driven service catalog and seamless Remedy integration.
+Details: Transformed legacy networks with a tailored service catalog, advanced ILOR mapping, and Remedy integration for secure, efficient request handling and improved user satisfaction.
+9. Automobile Enabler Application
+Short Description: Developed an end-to-end ITSM extension for the automobile sector, improving incident management and customer support.
+Details: This application delivers a seamless ITSM experience tailored for the automobile industry, addressing post-service customer needs by customizing the incident module and streamlining ticket categorization and assignment with advanced client scripting. Comprehensive documentation and ongoing process improvements ensured robust support and transparency throughout the application lifecycle.
+10. BAT – Regional Service Catalog
+Short Description: Unified global service catalog for British American Tobacco, supporting multi-region operations and asset lifecycle management.
+Details: BAT’s Regional Service Catalog empowers users across multiple international hubs such as Frankfurt and Houston by providing install, change, and dispose service types through intuitive catalog items. Leveraged CMDB integration for streamlined service tracking, efficient import processes, and complete product management — resulting in enhanced operational efficiency and centralized oversight.
+11. ISP: Internal Service Portal for T-Systems
+Short Description: Engineered a scalable portal for T-Systems, advancing access management and master data automation.
+Details: ISP revolutionized internal workflows at T-Systems by launching a robust service portal focused on Access Management and Master Data Management. Its dynamic flow designer automates request fulfillment, while customized email notifications enable real-time updates for stakeholders, driving greater transparency and faster response times.
+
