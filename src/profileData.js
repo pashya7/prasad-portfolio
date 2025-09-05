@@ -143,7 +143,7 @@ const profileData = {
   portfolios: [
     {
       "name": "ICT CMDB & Asset Management Implementation at AirTrunk",
-      "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
+      "img": "/AirTrunk.JPG",
       "tech": [ 
         "ITOM",
         "CMDB",
@@ -159,7 +159,7 @@ const profileData = {
   },
    {
       "name": "ITSM & ITAM Integration",
-      "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
+      "img": "/AP+.JPG",
       "tech": [
         "ServiceNow", 
         "ITSM",
@@ -178,7 +178,7 @@ const profileData = {
   },
   {
     "name": "Ministry of External Affairs Digital Platform",
-    "img": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
+    "img": "https://imagesunsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
     "tech": [
       "Multilingual Service Portal",
       "Google Cloud Translator Integration",
@@ -223,7 +223,7 @@ const profileData = {
   },
   {
     "name": "Project Portfolio Management Suite",
-    "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
+    "img": "/PPM.JPG",
     "tech": [
       "ServiceNow",
       "PPM Implementation"
@@ -235,7 +235,7 @@ const profileData = {
   },
   {
     "name": "FCI: Future Cloud Infrastructure",
-    "img": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
+    "img": "/FCI.JPG",
     "tech": [
       "Cloud Automation",
       "Service Catalog",
@@ -250,7 +250,7 @@ const profileData = {
   },
   {
     "name": "LegacyIT",
-    "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
+    "img": "/LegacyIT.JPG",
     "tech": [
       "Network Services",
       "Remedy Integration",
@@ -265,7 +265,7 @@ const profileData = {
   },
   {
     "name": "Automobile Enabler Application",
-    "img": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
+    "img": "/AutomobileEnabler.JPG",
     "tech": [
       "Automobile",
       "CMDB",
@@ -279,7 +279,7 @@ const profileData = {
   },
   {
     "name": "BAT - Regional Service Catalog",
-    "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
+    "img": "/BAT.JPG",
     "tech": [
       "Service Catalog",
       "CMDB",
@@ -293,7 +293,7 @@ const profileData = {
   },
   {
     "name": "ISP: Internal Service Portal for T-Systems",
-    "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
+    "img": "/ISP.JPG",
     "tech": [
       "Workflow Automation",
       "CMDB",
