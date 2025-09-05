@@ -131,12 +131,12 @@ const profileData = {
     { title: "The Future of ITSM: AI and Automation", url: "https://servicenow.com/blog/itsm-ai-automation.html", excerpt: "Explore how artificial intelligence and automation are reshaping ITSM and what it means for enterprise IT teams.", category: "Insights", tags: ["AI", "ITSM", "Automation"] }
   ],
   testimonials: [
-    { name: "Anjali Patil", role: "IT Manager, TechNova", quote: "1Prasad is a rare talent—his ServiceNow expertise and leadership transformed our ITSM operations.", linkedin: "https://linkedin.com/in/anjali-patil" },
-    { name: "Rahul Deshmukh", role: "Senior Developer, CloudBridge", quote: "A true mentor and problem-solver. Prasad’s solutions are always innovative and reliable.", linkedin: "https://linkedin.com/in/rahul-deshmukh" },
-    { name: "Priya Sharma", role: "Client, Fortune 500", quote: "Working with Prasad was a game-changer for our digital transformation journey.", linkedin: "" },
-    { name: "Amit Kulkarni", role: "Architect, TechNova", quote: "His attention to detail and passion for quality are unmatched.", linkedin: "" },
-    { name: "Sonal Jain", role: "Product Owner, CloudBridge", quote: "Prasad consistently delivers above expectations and inspires the team.", linkedin: "" },
-    { name: "Vikram Rao", role: "Manager, Fortune 500", quote: "Excellent communicator and technical leader.", linkedin: "" }
+    //{ name: "Anjali Patil", role: "IT Manager, TechNova", quote: "1Prasad is a rare talent—his ServiceNow expertise and leadership transformed our ITSM operations.", linkedin: "https://linkedin.com/in/anjali-patil" },
+    //{ name: "Rahul Deshmukh", role: "Senior Developer, CloudBridge", quote: "A true mentor and problem-solver. Prasad’s solutions are always innovative and reliable.", linkedin: "https://linkedin.com/in/rahul-deshmukh" },
+    //{ name: "Priya Sharma", role: "Client, Fortune 500", quote: "Working with Prasad was a game-changer for our digital transformation journey.", linkedin: "" },
+    //{ name: "Amit Kulkarni", role: "Architect, TechNova", quote: "His attention to detail and passion for quality are unmatched.", linkedin: "" },
+    //{ name: "Sonal Jain", role: "Product Owner, CloudBridge", quote: "Prasad consistently delivers above expectations and inspires the team.", linkedin: "" },
+    { name: "Yet to be added", role: "", quote: "", linkedin: "" }
   ],
   portfolios: [
     {
