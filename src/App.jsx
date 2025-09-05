@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ScrollToTopButton from './ScrollToTopButton';
 import {
   FaLinkedin, FaGithub, FaTwitter, FaMoon, FaSun, FaDownload, FaEnvelope, FaPhone, FaChevronLeft, FaChevronRight
 } from 'react-icons/fa';
@@ -34,7 +35,7 @@ export default function App() {
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300 overflow-x-hidden">
+    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-500 overflow-x-hidden scroll-smooth">
       {/* Header */}
       <header className="flex justify-between items-center py-4 px-4 md:px-8 shadow bg-sn bg-gradient-to-r from-[#005236] to-[#107360]">
         <h1 className="text-xl md:text-2xl font-bold text-white tracking-wide drop-shadow-lg">
@@ -102,9 +103,14 @@ export default function App() {
       </section>
 
       {/* Languages */}
-      <section className="py-8 px-4 max-w-3xl mx-auto w-full">
+      <motion.section
+        className="py-8 px-4 max-w-3xl mx-auto w-full"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+      >
         <LanguagesSection languages={profileData.languages} />
-      </section>
+      </motion.section>
 
       {/* Portfolio Gallery */}
       <section className="py-12 px-4 max-w-6xl mx-auto w-full overflow-x-hidden">
@@ -194,6 +200,7 @@ export default function App() {
       <footer className="text-center py-4 bg-sn bg-opacity-10" style={{ color: '#107360', fontWeight: 600 }}>
         &copy; {new Date().getFullYear()} {profileData.profile?.name}. All rights reserved.
       </footer>
+      <ScrollToTopButton />
     </div>
   );
 }

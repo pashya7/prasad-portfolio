@@ -64,7 +64,7 @@ function FAQSection({ onQuestionClick }) {
 export default function AIChatbot() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { from: 'bot', text: 'Hi! I am PrasadBot. Ask me about my experience, certifications, or portfolio.' }
+    { from: 'bot', text: 'Hi! I am PrasadBot. Ask me about my experience, certifications, or portfolio by selecting any question from the General Questions below!' }
   ]);
   const [input, setInput] = useState('');
   const ref = useRef(null);

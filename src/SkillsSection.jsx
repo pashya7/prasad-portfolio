@@ -11,7 +11,12 @@ export default function SkillsSection({ skills }) {
     "bg-purple-100 text-purple-800 border-purple-300"
   ];
   return (
-    <section className="py-6 px-2 sm:px-4 max-w-4xl mx-auto">
+    <motion.section
+      className="py-6 px-2 sm:px-4 max-w-4xl mx-auto"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+    >
       <div className="h-8 flex items-center justify-center w-full mb-2">
         <span className="inline-block w-24 border-t-2 border-sn opacity-30 mx-2"></span>
         <h2 className="text-3xl font-extrabold text-sn tracking-tight text-center">Skills</h2>
@@ -85,6 +90,6 @@ export default function SkillsSection({ skills }) {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

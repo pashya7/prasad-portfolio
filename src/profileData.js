@@ -4,17 +4,15 @@ const profileData = {
     {
       category: 'About Prasad',
       qa: [
-        { q: 'What is your ServiceNow experience?', a: 'I have 6 years of hands-on experience as a ServiceNow developer, leading ITSM, CSM, Service Portal, and automation projects for global clients.' },
-        { q: 'What certifications do you have?', a: 'I am certified in ServiceNow CIS-ITSM, CIS-Discovery, Application Developer, and ITIL v4.' },
+        { q: 'What is your ServiceNow experience?', a: 'I have 6 years of hands-on experience as a ServiceNow developer, leading ITSM, CSM, Service Portal, Integration, and automation projects for global clients.' },
+        { q: 'What certifications do you have?', a: 'I am certified in ServiceNow CIS-ITSM, CIS-Discovery, Application Developer, CSA, and ITIL v4.' },
         { q: 'What is your professional background?', a: 'I specialize in ServiceNow platform configuration, custom app development, integrations (REST/SOAP, Integration Hub), and process automation. I enjoy mentoring, collaborating, and delivering value through digital transformation.' },
       ],
     },
     {
       category: 'Portfolio & Projects',
       qa: [
-        { q: 'Show me your top project.', a: 'Sure! My Incident Automation Platform automates the entire incident lifecycle in ServiceNow, with Slack integration and real-time analytics. It reduced resolution time by 40%.' },
-        { q: 'What is the Incident Automation Platform?', a: 'It’s a custom solution on ServiceNow that automates incidents, routes tasks, integrates with Slack, and provides actionable analytics dashboards.' },
-        { q: 'Do you have any case studies?', a: 'Absolutely! Please visit my portfolio section for detailed case studies and project highlights.' },
+        { q: 'Show me your top project.', a: 'My top projects are ITSM & ITAM Integration and ICT CMDB & Asset Management Implementation at AirTrunk.' },
       ],
     },
     {
