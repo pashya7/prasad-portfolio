@@ -46,7 +46,7 @@ export default function TestimonialsSection({ testimonials }) {
   return (
     <motion.section
       ref={sectionRef}
-      className="py-12 px-2 max-w-4xl mx-auto"
+      className="py-6 px-2 max-w-4xl mx-auto"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
@@ -62,7 +62,7 @@ export default function TestimonialsSection({ testimonials }) {
           <h2 className="text-3xl font-extrabold text-sn tracking-tight text-center" tabIndex={0}>Testimonials & Endorsements</h2>
           <span className="inline-block w-24 border-t-2 border-sn opacity-30 mx-2"></span>
         </div>
-        <p className="text-center text-gray-500 mb-8 max-w-xl mx-auto">What colleagues, clients, and managers say about me.</p>
+        <p className="text-center text-gray-500 mb-2 max-w-xl mx-auto">What colleagues, clients, and managers say about me.</p>
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-4 mb-2">
             <button onClick={prev} aria-label="Previous testimonial" className="p-2 bg-sn-light text-white rounded-full shadow hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-sn-light" tabIndex={0}><FaChevronLeft /></button>

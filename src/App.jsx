@@ -166,27 +166,27 @@ export default function App() {
       </section>
 
       {/* Blog */}
-      <section className="py-12 px-4 max-w-6xl mx-auto w-full">
+      <section className="py-6 px-4 max-w-6xl mx-auto w-full">
         <BlogSection articles={profileData.articles} />
       </section>
 
       {/* Certifications */}
-      <section className="py-12 px-4 max-w-6xl mx-auto w-full">
+      <section className="py-6 px-4 max-w-6xl mx-auto w-full">
         <CertificationsTracker certifications={profileData.certifications} />
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 px-4 max-w-6xl mx-auto w-full">
+      <section className="py-6 px-4 max-w-6xl mx-auto w-full">
         <TestimonialsSection testimonials={profileData.testimonials} />
       </section>
 
       {/* AI Chatbot */}
-      <section className="py-12 px-4 max-w-6xl mx-auto w-full overflow-x-hidden">
+      <section className="py-6 px-4 max-w-6xl mx-auto w-full overflow-x-hidden">
         <AIChatbot />
       </section>
 
       {/* Fun Facts */}
-      <section className="py-12 px-4 max-w-6xl mx-auto w-full">
+      <section className="py-6 px-4 max-w-6xl mx-auto w-full">
         <FunFactsSection funFacts={profileData.funFacts} />
       </section>
 
