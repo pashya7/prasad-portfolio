@@ -178,7 +178,7 @@ const profileData = {
   },
   {
     "name": "Ministry of External Affairs Digital Platform",
-    "img": "https://imagesunsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
+    "img": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
     "tech": [
       "Multilingual Service Portal",
       "Google Cloud Translator Integration",

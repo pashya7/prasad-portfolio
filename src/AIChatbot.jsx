@@ -92,18 +92,18 @@ export default function AIChatbot() {
   return (
     <>
       <button
-        className="fixed bottom-6 right-6 z-50 bg-sn text-white rounded-full p-4 shadow-lg hover:scale-110 transition focus:outline-none focus:ring-4 focus:ring-sn-light/40 animate-pulse"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[99] bg-sn text-white rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center shadow-lg hover:scale-110 transition focus:outline-none focus:ring-4 focus:ring-sn-light/40 animate-pulse"
         style={{ boxShadow: '0 0 24px 4px #10736066, 0 2px 12px rgba(16,115,96,0.18)' }}
         onClick={() => setOpen(o => !o)}
         aria-label="Open chatbot"
       >
-        {open ? <FaTimes /> : <FaRobot />}
+        {open ? <FaTimes className="text-xl sm:text-2xl" /> : <FaRobot className="text-xl sm:text-2xl" />}
       </button>
       {open && (
-        <div className="fixed bottom-24 right-6 z-50 w-96 max-w-sm glass-chatbot border border-sn rounded-2xl shadow-2xl flex flex-col backdrop-blur-xl bg-white/80" style={{ boxShadow: '0 8px 32px rgba(16,115,96,0.14), 0 2px 12px rgba(16,115,96,0.09)', minHeight: 520, height: 520 }}>
-          <div className="flex items-center gap-2 p-4 bg-gradient-to-r from-blue-600 to-green-500 rounded-t-2xl shadow-lg">
-            <FaRobot className="text-white text-2xl drop-shadow" />
-            <span className="text-white font-bold tracking-wide text-lg">AskPrasad</span>
+        <div className="fixed bottom-20 right-2 sm:bottom-24 sm:right-6 z-[99] w-[95vw] max-w-xs sm:max-w-sm sm:w-96 glass-chatbot border border-sn rounded-2xl shadow-2xl flex flex-col backdrop-blur-xl bg-white/80" style={{ boxShadow: '0 8px 32px rgba(16,115,96,0.14), 0 2px 12px rgba(16,115,96,0.09)', minHeight: 420, height: 420 }}>
+          <div className="flex items-center gap-2 p-3 sm:p-4 bg-gradient-to-r from-blue-600 to-green-500 rounded-t-2xl shadow-lg">
+            <FaRobot className="text-white text-xl sm:text-2xl drop-shadow" />
+            <span className="text-white font-bold tracking-wide text-base sm:text-lg">AskPrasad</span>
           </div>
           {/* Main content area: chat scroll area, FAQSection, input fixed at bottom */}
           <div className="flex flex-col flex-1 min-h-0">
