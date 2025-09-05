@@ -2,8 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function SkillsSection({ skills }) {
+  skills = Array.isArray(skills) ? skills : [];
   const [activeTab, setActiveTab] = React.useState(0);
   const [openAccordions, setOpenAccordions] = React.useState(Array(skills.length).fill(false));
+  if (!skills.length) {
+    return (
+      <section className="py-6 px-2 sm:px-4 max-w-4xl mx-auto text-center text-gray-400">
+        <h2 className="text-3xl font-extrabold text-sn tracking-tight mb-2">Skills</h2>
+        <p className="text-lg">No skills to display.</p>
+      </section>
+    );
+  }
   const groupColors = [
     "bg-blue-100 text-blue-800 border-blue-300",
     "bg-green-100 text-green-800 border-green-300",

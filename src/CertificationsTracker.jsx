@@ -2,9 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function CertificationsTracker({ certifications }) {
+  certifications = Array.isArray(certifications) ? certifications : [];
   const [current, setCurrent] = React.useState(0);
   const [showImg, setShowImg] = React.useState(false);
   const total = certifications.length;
+
+  if (!total) {
+    return (
+      <section className="py-16 px-2 w-full min-h-[220px] flex flex-col items-center justify-center text-center text-gray-400">
+        <h2 className="text-3xl font-extrabold text-sn tracking-tight mb-2">Certifications Tracker</h2>
+        <p className="text-lg">No certifications to display.</p>
+      </section>
+    );
+  }
 
   // Indices for left, center, right cards (circular)
   const leftIdx = (current - 1 + total) % total;
@@ -17,6 +27,11 @@ export default function CertificationsTracker({ certifications }) {
 
   // Modal image state
   const [modalCert, setModalCert] = React.useState(null);
+
+  // Defensive: if current index is out of bounds, reset to 0
+  React.useEffect(() => {
+    if (current >= total) setCurrent(0);
+  }, [total, current]);
 
   return (
     <motion.section className="relative py-16 px-2 w-full min-h-[420px] flex flex-col items-center justify-center overflow-visible bg-gradient-to-br from-blue-50 via-green-50 to-white dark:from-gray-900 dark:via-blue-900 dark:to-gray-800" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
@@ -44,14 +59,14 @@ export default function CertificationsTracker({ certifications }) {
           >
             <div className="flex items-center gap-2 mb-1">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 19l-7 2 1.5-8.5L3 9l8.5-1.5L12 3l1.5 4.5L22 9l-3.5 3.5L19 21z"/></svg>
-              <h3 className="font-bold text-lg text-center text-sn">{certifications[current].name}</h3>
+              <h3 className="font-bold text-lg text-center text-sn">{certifications[current]?.name || ''}</h3>
             </div>
-            <span className="text-xs text-gray-500 mb-4">{certifications[current].year}</span>
-            {certifications[current].img ? (
+            <span className="text-xs text-gray-500 mb-4">{certifications[current]?.year || ''}</span>
+            {certifications[current]?.img ? (
               <button
                 className="button-sn px-6 py-2 text-xs font-semibold rounded bg-blue-600 text-white border border-blue-700 shadow-lg hover:bg-blue-700 hover:text-white focus:bg-blue-800 focus:text-white dark:bg-blue-500 dark:text-white dark:border-blue-300 dark:hover:bg-blue-700 dark:hover:text-white focus:scale-105 transition-transform duration-200 flex items-center gap-2 mt-auto"
                 tabIndex={0}
-                aria-label={`View certificate: ${certifications[current].name}`}
+                aria-label={`View certificate: ${certifications[current]?.name || ''}`}
                 onClick={() => setModalCert(certifications[current])}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 12H9m12 0A9 9 0 11 3 12a9 9 0 0118 0z" /></svg>
@@ -78,8 +93,8 @@ export default function CertificationsTracker({ certifications }) {
             ) : (
               <div className="mb-4 text-gray-500">No certificate image available.</div>
             )}
-            <h3 className="font-bold text-lg mb-2 text-center">{modalCert.name}</h3>
-            <span className="text-xs text-gray-500 mb-2">{modalCert.year}</span>
+            <h3 className="font-bold text-lg mb-2 text-center">{modalCert?.name || ''}</h3>
+            <span className="text-xs text-gray-500 mb-2">{modalCert?.year || ''}</span>
           </div>
         </div>
       )}

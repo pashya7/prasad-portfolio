@@ -1,6 +1,16 @@
 import React from "react";
 
+import PropTypes from "prop-types";
 export default function LanguagesSection({ languages }) {
+  languages = Array.isArray(languages) ? languages : [];
+  if (!languages.length) {
+    return (
+      <section className="py-8 px-4 max-w-3xl mx-auto text-center text-gray-400">
+        <h2 className="text-3xl font-extrabold text-sn tracking-tight mb-2">Languages</h2>
+        <p className="text-lg">No languages to display.</p>
+      </section>
+    );
+  }
   return (
     <section className="py-8 px-4 max-w-3xl mx-auto">
       <div className="h-8 flex items-center justify-center w-full mb-2">

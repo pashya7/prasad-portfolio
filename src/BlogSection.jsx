@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
+import PropTypes from "prop-types";
 export default function BlogSection({ articles }) {
+  articles = Array.isArray(articles) ? articles : [];
+  if (!articles.length) {
+    return (
+      <section className="py-12 px-2 max-w-4xl mx-auto text-center text-gray-400">
+        <h2 className="text-3xl font-extrabold text-sn tracking-tight mb-2">Articles & Blog</h2>
+        <p className="text-lg">No articles to display.</p>
+      </section>
+    );
+  }
   const [visibleCount, setVisibleCount] = useState(3);
   const visibleArticles = articles.slice(0, visibleCount);
   const hasMore = visibleCount < articles.length;

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProfileDataEditor from './ProfileDataEditor';
 import {
   FaLinkedin, FaGithub, FaTwitter, FaMoon, FaSun, FaDownload, FaEnvelope, FaPhone, FaChevronLeft, FaChevronRight
 } from 'react-icons/fa';
@@ -24,7 +26,7 @@ import AIChatbot from './AIChatbot';
 const EmailIcon = FaEnvelope;
 const PhoneIcon = FaPhone;
 
-export default function App() {
+function MainApp() {
   const [darkMode, setDarkMode] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [galleryIdx, setGalleryIdx] = useState(0);
@@ -202,5 +204,16 @@ export default function App() {
       </footer>
       <ScrollToTopButton />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainApp />} />
+        <Route path="/edit-profile" element={<ProfileDataEditor />} />
+      </Routes>
+    </Router>
   );
 }

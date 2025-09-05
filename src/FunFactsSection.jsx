@@ -1,6 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function FunFactsSection({ funFacts }) {
+  funFacts = Array.isArray(funFacts) ? funFacts : [];
+
+  if (!funFacts.length) {
+    return (
+      <section className="py-4 px-2 sm:py-6 sm:px-4 max-w-full sm:max-w-3xl mx-auto text-center text-gray-400">
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-sn tracking-tight mb-2">Fun Facts & Personal Interests</h2>
+        <p className="text-lg">No fun facts to display.</p>
+      </section>
+    );
+  }
+
   return (
     <section className="py-4 px-2 sm:py-6 sm:px-4 max-w-full sm:max-w-3xl mx-auto">
       <div className="flex flex-col items-center w-full mb-2">
